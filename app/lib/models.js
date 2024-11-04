@@ -26,6 +26,10 @@ const userSchema = new mongoose.Schema(
       type: Boolean,
       deafult: true,
     },
+    isActive: {
+      type: Boolean,
+      deafult: true,
+    },
     phone: {
       type: String,
     },
