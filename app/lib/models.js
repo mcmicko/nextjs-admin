@@ -13,7 +13,6 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: true,
       unique: true,
-      max: 26,
     },
     password: {
       type: String,
@@ -24,11 +23,11 @@ const userSchema = new mongoose.Schema(
     },
     isAdmin: {
       type: Boolean,
-      deafult: true,
+      default: false,
     },
     isActive: {
       type: Boolean,
-      deafult: true,
+      default: true,
     },
     phone: {
       type: String,
